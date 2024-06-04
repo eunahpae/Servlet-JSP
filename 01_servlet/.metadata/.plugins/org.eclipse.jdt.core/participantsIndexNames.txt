@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2637926211.index
+\chap01-life-cycle\src\main\java
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\62649161.index
+\chap02-service-method\src\main\java
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1552553200.index
+\practiceGetPost\src\main\java
