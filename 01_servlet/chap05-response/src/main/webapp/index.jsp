@@ -12,6 +12,8 @@
 
 	<ul>
 		<li><a href="response">Response 확인</a></li>
+		<li><a href="headers">Response Header 확인</a></li>
+		<li><a href="status">Response StatusCode 확인</a></li>
 	</ul>
 
 </body>

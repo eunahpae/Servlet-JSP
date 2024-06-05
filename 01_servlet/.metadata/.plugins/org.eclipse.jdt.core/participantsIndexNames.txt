@@ -3,11 +3,15 @@ D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\62
 \chap02-service-method\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\258173918.index
 \chap05-response\src\main\java
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1739505302.index
+\chap06-exception-handler\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\363490250.index
 \chap03-parameter\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2637926211.index
 \chap01-life-cycle\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1552553200.index
 \practiceGetPost\src\main\java
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\619185925.index
+\practice_0605\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2155757514.index
 \chap03-parameter\src\main\java
