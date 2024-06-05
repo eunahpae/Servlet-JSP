@@ -9,14 +9,4 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>ResponseTestServlet</display-name>
-    <servlet-name>ResponseTestServlet</servlet-name>
-    <servlet-class>com.eunah.response.section01.response.ResponseTestServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ResponseTestServlet</servlet-name>
-    <url-pattern>/ResponseTestServlet</url-pattern>
-  </servlet-mapping>
 </web-app>
