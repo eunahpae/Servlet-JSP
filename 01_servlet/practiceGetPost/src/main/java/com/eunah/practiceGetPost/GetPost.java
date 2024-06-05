@@ -26,7 +26,7 @@ public class GetPost extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("GET 요청 처리를 위한 doGet() 호출됨");
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("GET 요청 처리를 위한 doPost() 호출됨");
