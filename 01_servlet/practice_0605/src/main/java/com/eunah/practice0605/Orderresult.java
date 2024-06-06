@@ -33,7 +33,5 @@ public class Orderresult extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.print(responseText.toString());
 		out.close();
-
 	}
-
 }

@@ -15,7 +15,6 @@ public class IcecreamOrder extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		
 		String name = request.getParameter("icecreamName");
 		
@@ -31,6 +30,5 @@ public class IcecreamOrder extends HttpServlet {
 		} else {
 			response.sendError(404, "잘못된 수량입니다.");
 		}
-
 	}
 }
