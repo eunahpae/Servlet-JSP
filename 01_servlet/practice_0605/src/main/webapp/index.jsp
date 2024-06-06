@@ -8,10 +8,11 @@
 </head>
 <body>
 
-	<h1>Icecream Order System</h1>
+	<h1>🧡 Icecream Order System 🧡</h1>
 
 	<form action="icecreamOrder" method="post">
-		아이스크림 선택 : <select name="icecreamName">
+		제품 : <select name="icecreamName">
+			<option value="" disabled selected>아이스크림 선택</option>
 			<option value="초코">초코</option>
 			<option value="바나나">바나나</option>
 			<option value="망고">망고</option>

@@ -1,5 +1,6 @@
 package com.eunah.practice0605;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -15,20 +16,21 @@ public class IcecreamOrder extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		PrintWriter out = response.getWriter();
-		response.setContentType("text/html; charset=UTF-8");
+		
 		String name = request.getParameter("icecreamName");
 		
 		int cnt = Integer.parseInt(request.getParameter("cnt"));
 		int price = 1000;
-
-		if (cnt > 0) {
-			int totalPrice = price * cnt;
-			out.print("<h2>" + name + " 아이스크림 " + cnt + "개 주문하셨습니다.<br></h2>");
-			out.print("결제하실 금액은 " + totalPrice + "원 입니다.");
+		int totalPrice = price * cnt;
+		request.setAttribute("totalPrice", totalPrice);
+				
+		if (cnt > 0) {			
+			RequestDispatcher rd = request.getRequestDispatcher("orderresult");
+			rd.forward(request, response);
+		
 		} else {
 			response.sendError(404, "잘못된 수량입니다.");
 		}
-		out.close();
+
 	}
 }
