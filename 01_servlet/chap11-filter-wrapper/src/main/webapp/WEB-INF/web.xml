@@ -28,4 +28,23 @@
     <filter-name>FirstFilter</filter-name>
     <url-pattern>/FirstFilter</url-pattern>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistMemverServlet</display-name>
+    <servlet-name>RegistMemverServlet</servlet-name>
+    <servlet-class>com.eunah.filterWrapper.section02.uses.RegistMemverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistMemverServlet</servlet-name>
+    <url-pattern>/RegistMemverServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>PasswordEncryptFilter</display-name>
+    <filter-name>PasswordEncryptFilter</filter-name>
+    <filter-class>com.eunah.filterWrapper.section02.uses.PasswordEncryptFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PasswordEncryptFilter</filter-name>
+    <url-pattern>/PasswordEncryptFilter</url-pattern>
+  </filter-mapping>
 </web-app>
