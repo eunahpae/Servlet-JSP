@@ -18,6 +18,8 @@ public class ContextListenerTestServlet extends HttpServlet {
 		ServletContext context = request.getServletContext();
 
 		context.setAttribute("test", "value1");
+		
+		/* 동일한 key로 context에 attribute 추가하면 수정되면서 attributeReplaced() 메소드 동작 */
 		context.setAttribute("test", "value2");
 		context.removeAttribute("test");
 		

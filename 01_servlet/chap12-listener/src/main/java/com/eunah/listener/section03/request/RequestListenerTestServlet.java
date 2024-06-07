@@ -18,5 +18,4 @@ public class RequestListenerTestServlet extends HttpServlet {
 		request.removeAttribute("height");
 
 	}
-
 }

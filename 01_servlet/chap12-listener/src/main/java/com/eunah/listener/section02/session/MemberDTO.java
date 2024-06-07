@@ -51,13 +51,16 @@ public class MemberDTO implements HttpSessionBindingListener {
 
 	@Override
 	public void valueBound(HttpSessionBindingEvent event) {
-		System.out.println("value bound!!!!!!!!!!!!!!!!!!!!!!!");
+		/* 해당 클래스로 생성한 인스턴스가 session에 바인딩(setAttribute)되는 경우 동작 */
+		System.out.println("value bound!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	}
 
 	@Override
 	public void valueUnbound(HttpSessionBindingEvent event) {
-		System.out.println("value unbound!!!!!!!!!!!!!!!!!!!!!!!");
+		/* 해당 클래스로 생성한 인스턴스가 session에 바인딩 해제(removeAttribute 또는 세션 만료)되는 경우 동작 */
+		System.out.println("value unbound!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	}
+
 
 	
 	
