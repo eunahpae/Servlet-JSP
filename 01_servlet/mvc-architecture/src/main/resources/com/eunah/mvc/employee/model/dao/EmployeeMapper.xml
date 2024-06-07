@@ -58,7 +58,7 @@
           FROM EMPLOYEE
     </select>
 
-    <insert id="insertEmp" parameterType="com.ohgiraffers.mvc.employee.model.dto.EmployeeDTO">
+    <insert id="insertEmp" parameterType="com.eunah.mvc.employee.model.dto.EmployeeDTO">
         INSERT INTO EMPLOYEE (
                                 EMP_ID
                                 ,EMP_NAME
