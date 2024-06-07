@@ -28,7 +28,7 @@ public class CommonsFileUploadModule {
 
 			/* mkdirs() : 상위 폴더를 포함한 모든 경로를 한번에 생성 */
 			/* (참고) mkdir() : 해당하는 폴더 한 개만 생성 */
-			System.out.println("폴더 생성 여부 : " + directory.mkdirs());
+			System.out.println("폴더 생성 여부 : " + directory.mkdirs());			
 		}
 
 		/* request의 파일 데이터 정보를 담을 List와 그외 폼데이터 정보를 담을 Map 생성 */
@@ -101,9 +101,7 @@ public class CommonsFileUploadModule {
 					 */
 					parameter.put(item.getFieldName(),
 							new String(item.getString().getBytes("ISO-8859-1"), encodingType));
-
 				}
-
 			}
 
 			System.out.println("parameter : " + parameter);
@@ -130,12 +128,8 @@ public class CommonsFileUploadModule {
 					e.printStackTrace();
 				}
 			}
-
 			result = 0;
-
 		}
-
 		return result;
 	}
-
 }
