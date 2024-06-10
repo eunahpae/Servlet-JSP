@@ -36,6 +36,9 @@ public class CookieHandlerServlet extends HttpServlet {
 		Cookie firstNameCookie = new Cookie("firstName", firstName);
 		Cookie lastNameCookie = new Cookie("lastName", lastName);
 		
+		
+		
+		
 		// 2.
 		firstNameCookie.setMaxAge(60 * 60 * 24);
 		lastNameCookie.setMaxAge(60 * 60 * 24);
