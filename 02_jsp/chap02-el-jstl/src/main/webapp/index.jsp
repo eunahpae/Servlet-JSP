@@ -23,6 +23,8 @@
 	
 	<h1>JSTL (JSP Standard Tag Library)</h1>
 	<h3><a href="views/jstl/testJstlCore.jsp">Core Library test</a></h3>
+	<h3><a href="views/jstl/testJstlFmt.jsp">FMT Library test</a></h3>
+	<h3><a href="views/jstl/testJstlFunction.jsp">Function Library test</a></h3>
 	
 
 </body>

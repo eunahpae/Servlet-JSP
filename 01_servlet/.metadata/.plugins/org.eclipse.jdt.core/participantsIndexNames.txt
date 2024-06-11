@@ -1,6 +1,8 @@
 INDEX VERSION 1.134
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2140158591.index
 \mvc-architecture\src\main\java
+D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3544107261.index
+\practice_0605\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1552553200.index
 \practiceGetPost\src\main\java
 D:\workspace\01_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1245638041.index

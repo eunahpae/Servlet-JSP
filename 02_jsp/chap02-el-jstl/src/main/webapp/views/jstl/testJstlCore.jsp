@@ -142,7 +142,7 @@
 
 	<h2>c:forEach 태그 - 배열 또는 컬렉션 연속 처리에 for~each 문처럼 사용</h2>
 	<c:forEach var="color" items="${ colors }" varStatus="st">
-		<font color="${ color }">(${st.index}) ${st.count} : 글자색 ${ color}</font>
+		<font color="${ color }">(${st.index}) ${st.count} : 글자색 ${ color }</font>
 		<br>
 	</c:forEach>
 
@@ -150,10 +150,27 @@
 	<hr />
 
 	<h2>c:forTokens 태그 - 문자열을 토큰으로 분리 처리할 때 사용</h2>
+	<ul>
+		<c:forTokens var="saying" items="hello hi 안녕 bye sayonara" delims=" ">
+			<li>${ saying }</li>
+		</c:forTokens>
+	</ul>
+	<ul>
+		<c:forTokens var="saying" items="hello-hi*안녕/bye sayonara"
+			delims="-/* ">
+			<li>${ saying }</li>
+		</c:forTokens>
+	</ul>
 
 	<hr />
 
 	<h2>c:url 태그 - 링크 설정 정보 별도 지정 시 사용</h2>
+
+	<c:url var="fmtlink" value="testJstlCoreResult.jsp">
+		<c:param name="num" value="77" />
+	</c:url>
+	<a href="${ fmtlink }">결과 화면 연결</a>
+
 
 </body>
 </html>

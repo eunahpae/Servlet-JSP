@@ -19,10 +19,12 @@ public class IcecreamOrder extends HttpServlet {
 		int cnt = Integer.parseInt(request.getParameter("cnt"));
 		int price = 1000;
 		int totalPrice = price * cnt;
+		request.setAttribute("name", name);
+		request.setAttribute("cnt", cnt);
 		request.setAttribute("totalPrice", totalPrice);
 				
-		if (cnt > 0) {			
-			RequestDispatcher rd = request.getRequestDispatcher("orderresult");
+		if (cnt > 0) {		
+			RequestDispatcher rd = request.getRequestDispatcher("views/orderSheet.jsp");
 			rd.forward(request, response);
 		
 		} else {
