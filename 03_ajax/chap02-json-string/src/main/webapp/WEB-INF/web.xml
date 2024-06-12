@@ -9,4 +9,34 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ReceiveJsonStringServlet</display-name>
+    <servlet-name>ReceiveJsonStringServlet</servlet-name>
+    <servlet-class>com.eunah.json.section01.jsonstring.ReceiveJsonStringServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveJsonStringServlet</servlet-name>
+    <url-pattern>/ReceiveJsonStringServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReceiveArrayStringServlet</display-name>
+    <servlet-name>ReceiveArrayStringServlet</servlet-name>
+    <servlet-class>com.eunah.json.section02.array.ReceiveArrayStringServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveArrayStringServlet</servlet-name>
+    <url-pattern>/ReceiveArrayStringServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReceiveJsonArrayervlet</display-name>
+    <servlet-name>ReceiveJsonArrayervlet</servlet-name>
+    <servlet-class>com.eunah.json.section03.jsonarray.ReceiveJsonArrayervlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveJsonArrayervlet</servlet-name>
+    <url-pattern>/ReceiveJsonArrayervlet</url-pattern>
+  </servlet-mapping>
 </web-app>
