@@ -28,4 +28,43 @@
     <filter-name>PasswordEncryptFilter</filter-name>
     <url-pattern>/PasswordEncryptFilter</url-pattern>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberLoginServlet</display-name>
+    <servlet-name>MemberLoginServlet</servlet-name>
+    <servlet-class>com.eunah.auth.member.controller.MemberLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberLoginServlet</servlet-name>
+    <url-pattern>/MemberLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberLogoutServlet</display-name>
+    <servlet-name>MemberLogoutServlet</servlet-name>
+    <servlet-class>com.eunah.auth.member.controller.MemberLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberLogoutServlet</servlet-name>
+    <url-pattern>/MemberLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MemberServletPage</display-name>
+    <servlet-name>MemberServletPage</servlet-name>
+    <servlet-class>com.eunah.auth.member.controller.MemberServletPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberServletPage</servlet-name>
+    <url-pattern>/MemberServletPage</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>AuthenticationFilter</display-name>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.eunah.auth.common.filter.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/AuthenticationFilter</url-pattern>
+  </filter-mapping>
 </web-app>

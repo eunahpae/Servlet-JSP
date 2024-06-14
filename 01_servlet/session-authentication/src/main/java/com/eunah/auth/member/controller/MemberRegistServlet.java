@@ -41,6 +41,7 @@ public class MemberRegistServlet extends HttpServlet {
 			page = "/WEB-INF/views/main/main.jsp";
 		} else {
 			page = "/WEB-INF/views/auth/fail.jsp";
+			request.setAttribute("code", "regist");
 			request.setAttribute("message", "회원가입에 실패하였습니다 :(");
 		}
 		

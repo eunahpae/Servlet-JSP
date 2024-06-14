@@ -10,7 +10,15 @@
 	<script>
 		alert('${ requestScope.message }');
 
-		window.location.replace('/${ pageContext.servletContext.contextPath }/member/regist');
+		const code = '${ requestScope.code }';
+		if (code === 'login') {
+			window.location
+					.replace('${ pageContext.servletContext.contextPath }/member/login')
+
+		} else if (code === 'regist') {
+			window.location
+					.replace('${ pageContext.servletContext.contextPath }/member/regist')
+		}
 	</script>
 
 </body>

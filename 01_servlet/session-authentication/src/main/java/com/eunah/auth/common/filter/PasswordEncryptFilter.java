@@ -23,8 +23,19 @@ public class PasswordEncryptFilter extends HttpFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-		EncryptRequestWrapper wrapper = new EncryptRequestWrapper((HttpServletRequest) request);
-		chain.doFilter(wrapper, response);
+		HttpServletRequest hrequest = (HttpServletRequest) request;
+		String uri = hrequest.getRequestURI();
+		System.out.println("{Filter] requestURI : " + uri);
+
+		String intent = uri.substring(uri.lastIndexOf("/"));
+		System.out.println("{Filter] intent : " + intent);
+
+		if (!"/login".equals(intent)) {
+			EncryptRequestWrapper wrapper = new EncryptRequestWrapper(hrequest);
+			chain.doFilter(wrapper, response);
+		} else {
+			chain.doFilter(request, response);
+		}
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
