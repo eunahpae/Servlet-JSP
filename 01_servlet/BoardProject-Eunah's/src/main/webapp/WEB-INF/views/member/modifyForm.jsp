@@ -51,8 +51,8 @@
 				</tr>
 				<tr>
 					<td>우편번호</td>
-					<td><input type="text" name="zipCode" id="zipCode" value='${ fn:split(sessionScope.loginMember.address, "$")[0] }' readonly></td>
-					<td><input type="button" value="검색" class="btn btn-yg" id="searchZipCode"></td>
+					<td><input type="text" name="zipCode" id="zipCode" value='${ fn:split(sessionScope.loginMember.address, "$")[0] }' readonly>
+					<input type="button" value="검색" class="btn" id="searchZipCode"></td>
 				</tr>
 				<tr>
 					<td>주소</td>
@@ -69,18 +69,15 @@
 			<br>
 			
 			<div class="btns" align="center">
-				<input type="reset" value="메인으로"  class="btn btn-yg" id="goMain">
-				<input type="submit" value="저장" class="btn btn-or">
+				<input type="reset" value="메인으로"  class="btn" id="goMain">
+				<input type="submit" value="저장" class="btn">
 			</div>
 		</form>
-		
 		<br>
 		
 		<c:if test="${ sessionScope.loginMember.role eq 'ROLE_MEMBER' }">
-			<div class="btns" align="center">
-				<form id="withdrawalForm" action="${ pageContext.servletContext.contextPath }/member/delete" method="post">
-					<input type="submit" value="회원탈퇴" class="btn btn-danger">
-				</form>
+			<div class="btn" style="text-align:right">
+				<a href="${ pageContext.servletContext.contextPath }/member/delete">회원탈퇴</a>
 			</div>
 		</c:if>
 	</div>	<!-- outer end -->

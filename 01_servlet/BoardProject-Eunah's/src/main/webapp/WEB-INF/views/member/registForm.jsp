@@ -20,8 +20,8 @@
 			<table align="center">
 				<tr>
 					<td width="200px">* 아이디 </td>
-					<td><input type="text" maxlength="13" name="memberId" id="memberId" required></td>
-					<td width="100px"><input type="button" value="중복확인" class="btn btn-or" id="duplicationCheck"></td>
+					<td><input type="text" maxlength="13" name="memberId" id="memberId" required>
+					<input type="button" value="중복확인" class="btn" id="duplicationCheck"></td>
 				</tr>
 				<tr>
 					<td>* 비밀번호</td>
@@ -50,8 +50,8 @@
 				</tr>
 				<tr>
 					<td>우편번호</td>
-					<td><input type="text" name="zipCode" id="zipCode" readonly></td>
-					<td><input type="button" value="검색" class="btn btn-yg" id="searchZipCode"></td>
+					<td><input type="text" name="zipCode" id="zipCode" readonly>
+					<input type="button" value="검색" class="btn" id="searchZipCode"></td>
 				</tr>
 				<tr>
 					<td>주소</td>

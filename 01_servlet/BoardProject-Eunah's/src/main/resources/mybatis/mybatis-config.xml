@@ -3,7 +3,6 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	
 	<environments default="dev">
 		<environment id="dev">
 			<transactionManager type="JDBC"/>
@@ -17,7 +16,6 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/eunah/project/notice/model/dao/NoticeDAO.xml"/>
 		<mapper resource="com/eunah/project/member/model/dao/MemberDAO.xml"/>
 		<mapper resource="com/eunah/project/board/model/dao/BoardDAO.xml"/>
 	</mappers>

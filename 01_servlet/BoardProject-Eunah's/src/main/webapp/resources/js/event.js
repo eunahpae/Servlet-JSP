@@ -22,19 +22,6 @@ window.onload = function() {
 		}
 	}
 	
-	if(document.getElementById("writeNotice")) {
-		const $writeNotice = document.getElementById("writeNotice");
-		$writeNotice.onclick = function() {
-			location.href = "/BoardProject/notice/insert";
-		}
-	}
-	
-	if(document.getElementById("cancleNotice")) {
-		const $cancleNotice = document.getElementById("cancleNotice");
-		$cancleNotice.onclick = function() {
-			location.href = "/BoardProject/notice/list";
-		}
-	}
 	
 	if(document.getElementById("writeBoard")) {
 		const $writeBoard = document.getElementById("writeBoard");
@@ -43,10 +30,4 @@ window.onload = function() {
 		}
 	}
 	
-	if(document.getElementById("writeThumbnail")) {
-		const $writeThumbnail = document.getElementById("writeThumbnail");
-		$writeThumbnail.onclick = function() {
-			location.href = "/BoardProject/thumbnail/insert";
-		}
-	}
 }

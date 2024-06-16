@@ -19,4 +19,14 @@
     <servlet-name>Board</servlet-name>
     <url-pattern>/Board</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BoardDetailServlet</display-name>
+    <servlet-name>BoardDetailServlet</servlet-name>
+    <servlet-class>com.eunah.project.board.controller.BoardDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardDetailServlet</servlet-name>
+    <url-pattern>/BoardDetailServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

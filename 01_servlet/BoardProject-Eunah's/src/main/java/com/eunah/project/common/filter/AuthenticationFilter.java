@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebFilter(urlPatterns = {"/notice/*", "/member/*", "/board/*", "/thumbnail/*"})
+@WebFilter(urlPatterns = {"/member/*", "/board/*"})
 public class AuthenticationFilter implements Filter {
 	
 	Map<String, List<String>> permitURIList;
@@ -79,14 +79,12 @@ public class AuthenticationFilter implements Filter {
 		List<String> memberPermitList = new ArrayList<>();
 		List<String> allPermitList = new ArrayList<>();
 		
-		adminPermitList.add("/notice/insert");
-		adminPermitList.add("/notice/update");
-		
 		memberPermitList.add("/notice/list");
 		memberPermitList.add("/notice/detail");
 		memberPermitList.add("/board/list");
 		memberPermitList.add("/board/insert");
 		memberPermitList.add("/board/search");
+		memberPermitList.add("/board/detail");
 		memberPermitList.add("/thumbnail/list");
 		memberPermitList.add("/thumbnail/insert");
 		memberPermitList.add("/thumbnail/detail");

@@ -17,16 +17,11 @@ public interface BoardDAO {
 
 	public int insertBoard(BoardDTO newBoard);
 	
-	/* 썸네일게시판 목록 조회용 메소드 */
-	public List<BoardDTO> selectThumbnailList(SqlSession session);
-	
-	/* 썸네일 제목과 내용 insert용 메소드 */
-	public int insertThumbnailContent(BoardDTO thumbnail);
-	
 	/* Attachment 테이블에 insert */
 	public int insertAttachment(AttachmentDTO file);
 	
 	public int incrementBoardCount(int no);
-
-	public BoardDTO selectOneThumbnailBoard(int no);
+	
+	public BoardDTO selectBoardDetail(int no);
+	
 }
